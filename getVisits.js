@@ -14,6 +14,9 @@ function getVisits(petId) {
 
     const reason = document.getElementById("visitReason");
     reason.innerText = "Reason for Visit: " + petVisits[y].description;
+
+    const pet = document.getElementById("visitReason");
+    pet.innerText = "Pet Name:  " + petVisits[y].pet.name;
 }
 
 function getPetVisits() {
