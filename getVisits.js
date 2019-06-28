@@ -27,7 +27,6 @@ function getPetVisits() {
             sessionStorage.setItem('petVisits', petVisits);
         }).catch((error) => {
             console.warn("It definitely didnt work... :(", error);
-            console.log("It definitely didnt work... :(", error);
         });
     return;
 }
