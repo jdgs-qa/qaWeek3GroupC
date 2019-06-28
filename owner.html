@@ -40,70 +40,22 @@
     </div>
     </nav>
 
-
-
-    <div class="container-fluid padding">
-            <div class="row padding">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="img/pet1.png" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">List of owners</h4>
-                            <p class="card-text">See a list of owners</p>
-                            <a class="btn btn-outline-secondary" href="owner.html">See profile</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="img/pet2.png" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Show visits</h4>
-                            <p class="card-text">Display visits </p>
-                            <a class="btn btn-outline-secondary" onclick="getVisits()" href="visit.html">See profile</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="img/pet3.png" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Coming Soon</h4>
-                            <p class="card-text">TBC, coming soon. </p>
-                            <a class="btn btn-outline-secondary" href="#">See profile</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+            <!-- Content here -->
+        <h1 id ="head" class ="">Here are all our owners.</h1>
+        <h3 id ="head" class ="">Select to see information.</h3>
+        <div id = "details">  
         </div>
 
-        <div class="container-fluid">
-                <div class="row jumbotron">
-                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-                        <p>placeholder text placeholder text placeholder text placeholder text
-                        placeholder text placeholder text placeholder text placeholder text
-                    placeholder text placeholder text placeholder text placeholder text</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-                        <a href="#"><button type="button" class="btn btn-outline-secondary
-                        btn-lg">Web Hosting</button></a>
-                    </div>
-                </div>
+        <button onclick="return viewOwners()">Get All Owners</button>
+    </div>
 
-        <div class="container-fluid padding">
-            <div class="row padding">
-                <div class="col-lg-6">
-                    <h3>Our philosophy </h3>
-                    <p>Functional. Clean. No bloat.</p>
-                    <p>Placeholder text placeholder text
-                placeholder text placeholder text placeholder text placeholder text</p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="img/background0.png" class="img-fluid" alt="">
-                </div>
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
             </div>
         </div>
-
+    </figure>
 
     <footer>
         <div class="container-fluid padding">
@@ -139,7 +91,7 @@
             </div>
         </div>
     </footer>
-<script src="homePage.js"></script>
+<script src="viewAllOwners.js"></script>
 </body>
 
 </html>
