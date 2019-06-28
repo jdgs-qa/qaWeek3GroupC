@@ -3,12 +3,17 @@ window.onload = getVisits(1);
 function getVisits(petId) {
     getPetVisits()
     const petVisits = sessionStorage.getItem("petVisits");
-    for (let i in petVisits) {
-        if (petVisits[i].pet.id == petId) {
-            return false;
+    for (let i of petVisits) {
+        let visitNo = petVisits[i];
+        if (visitNo.pet.id == petId) {
+            let y = i;
         }
     }
+    const date = document.getElementById("visitDate");
+    date.innerText = "Date of Visit: " + petVisits[y].date;
 
+    const reason = document.getElementById("visitReason");
+    reason.innerText = "Reason for Visit: " + petVisits[y].description;
 }
 
 function getPetVisits() {
